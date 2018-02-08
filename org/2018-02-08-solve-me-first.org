@@ -8,10 +8,14 @@ tags: [ocaml]
 ---
 #+END_EXPORT
 
+I like OCaml but the learning curve is too steep for me so I decided to start
+with small and develop my toolbox first.
+
+* Given an array of integers, can you find the sum of its elements?
+
 #+BEGIN_SRC ocaml
 let () =
-    let a = read_int() in
-    let b = read_int() in
-    (* Hint: Type print_int(a+b); below *)
-    print_int(a + b);
+  let array_size = read_int() in
+  let array = Array.init array_size in
+  ...
 #+END_SRC
