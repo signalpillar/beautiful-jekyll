@@ -1,0 +1,17 @@
+#+OPTIONS: toc:nil num:nil
+#+BEGIN_EXPORT html
+---
+layout: post
+title: "Solve Me First"
+permalink: /:title/
+tags: [ocaml]
+---
+#+END_EXPORT
+
+#+BEGIN_EXAMPLE ocaml
+let () =
+    let a = read_int() in
+    let b = read_int() in
+    (* Hint: Type print_int(a+b); below *)
+    print_int(a + b);
+#+END_EXAMPLE
