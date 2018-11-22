@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-11-22 Thu 21:14 -->
+<!-- 2018-11-22 Thu 21:26 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -244,23 +244,55 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf50707c">1. signalpillar</a>
+<li><a href="#orgd27340a">1. blog</a>
 <ul>
-<li><a href="#orgedb295b">1.1. tox &amp; emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tox">tox</span>&#xa0;<span class="python">python</span></span></a></li>
-<li><a href="#org5d73f1d">1.2. Just another attempt</a></li>
+<li><a href="#org4fdd99f">1.1. mypy.ini&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span>&#xa0;<span class="mypy">mypy</span></span></a></li>
+<li><a href="#org10581b8">1.2. tox &amp; emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tox">tox</span>&#xa0;<span class="python">python</span></span></a></li>
+<li><a href="#org96551ba">1.3. Just another attempt</a></li>
+</ul>
+</li>
+<li><a href="#org97e0980">2. drafts</a>
+<ul>
+<li><a href="#org6eb1f1b">2.1. <span class="todo TODO">TODO</span> Another tool on my toolbelt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span></span></a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgf50707c" class="outline-2">
-<h2 id="orgf50707c"><span class="section-number-2">1</span> signalpillar</h2>
+<div id="outline-container-orgd27340a" class="outline-2">
+<h2 id="orgd27340a"><span class="section-number-2">1</span> blog</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgedb295b" class="outline-3">
-<h3 id="orgedb295b"><span class="section-number-3">1.1</span> tox &amp; emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tox">tox</span>&#xa0;<span class="python">python</span></span></h3>
+<div id="outline-container-org4fdd99f" class="outline-3">
+<h3 id="org4fdd99f"><span class="section-number-3">1.1</span> mypy.ini&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span>&#xa0;<span class="mypy">mypy</span></span></h3>
 <div class="outline-text-3" id="text-1-1">
+<p>
+The configuration that is not annoying and does the job.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-ini">	[mypy]
+	warn_unused_ignores = True
+	follow_imports = skip
+	show_error_context = True
+	warn_incomplete_stub = True
+	ignore_missing_imports = True
+	check_untyped_defs = True
+	cache_dir = /dev/null
+	# Cannot enable this one as we still allow defining functions without any types.
+	# disallow_untyped_defs = True
+	warn_redundant_casts = True
+	warn_unused_configs = True
+	strict_optional = True
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org10581b8" class="outline-3">
+<h3 id="org10581b8"><span class="section-number-3">1.2</span> tox &amp; emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tox">tox</span>&#xa0;<span class="python">python</span></span></h3>
+<div class="outline-text-3" id="text-1-2">
 <p>
 I am havy user of <b>tox</b>. Every new project has one and it is not only because I
 can keep my dependencies and tools configuration in one place but also because I
@@ -312,9 +344,9 @@ Powerful combo of tox, projectile, and helm.
 </div>
 </div>
 
-<div id="outline-container-org5d73f1d" class="outline-3">
-<h3 id="org5d73f1d"><span class="section-number-3">1.2</span> Just another attempt</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-org96551ba" class="outline-3">
+<h3 id="org96551ba"><span class="section-number-3">1.3</span> Just another attempt</h3>
+<div class="outline-text-3" id="text-1-3">
 <p>
 Another attempt to have a place to write short notes. In org-mode. Without tooling.
 </p>
@@ -331,10 +363,25 @@ The theme for HTML page is <a href="https://github.com/fniessen/org-html-themes#
 </div>
 </div>
 </div>
+<div id="outline-container-org97e0980" class="outline-2">
+<h2 id="org97e0980"><span class="section-number-2">2</span> drafts</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org6eb1f1b" class="outline-3">
+<h3 id="org6eb1f1b"><span class="section-number-3">2.1</span> <span class="todo TODO">TODO</span> Another tool on my toolbelt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span></span></h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+<a href="https://github.com/ltworf/typedload">typedload</a> is an amazing library that helps load/dump dictionary to the data
+class or <code>typing.NamedTuple</code> with minimal effort. Without any additional
+attributes just using pure type annotations it understands how to map the fields.
+</p>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Volodymyr Vitvitskyi</p>
-<p class="date">Created: 2018-11-22 Thu 21:14</p>
+<p class="date">Created: 2018-11-22 Thu 21:26</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

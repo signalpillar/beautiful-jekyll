@@ -15,13 +15,6 @@
 #+HTML_HEAD: <script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
 
 * signalpillar
-** TODO Another tool on my toolbelt                                 :python:
-SCHEDULED: <2018-11-24 Sat>
-
-[[https://github.com/ltworf/typedload][typedload]] is an amazing library that helps load/dump dictionary to the data
-class or =typing.NamedTuple= with minimal effort. Without any additional
-attributes just using pure type annotations it understands how to map the fields.
-
 **  mypy.ini                                                   :python:mypy:
 The configuration that is not annoying and does the job.
 
@@ -92,3 +85,12 @@ Another attempt to have a place to write short notes. In org-mode. Without tooli
 3. Push to github.
 
 The theme for HTML page is [[https://github.com/fniessen/org-html-themes#bigblow][Bigblow]].
+* Drafts
+** TODO Another tool on my toolbelt                                 :python:
+SCHEDULED: <2018-11-24 Sat>
+
+[[https://github.com/ltworf/typedload][typedload]] is an amazing library that helps load/dump dictionary to the data
+class or =typing.NamedTuple= with minimal effort. Without any additional
+attributes just using pure type annotations it understands how to map the fields.
+* Miscellaneous
+** TODO Add About section to this page
