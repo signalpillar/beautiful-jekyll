@@ -15,6 +15,32 @@
 #+HTML_HEAD: <script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
 
 * signalpillar
+** TODO Another tool on my toolbelt                                 :python:
+SCHEDULED: <2018-11-24 Sat>
+
+[[https://github.com/ltworf/typedload][typedload]] is an amazing library that helps load/dump dictionary to the data
+class or =typing.NamedTuple= with minimal effort. Without any additional
+attributes just using pure type annotations it understands how to map the fields.
+
+**  mypy.ini                                                   :python:mypy:
+The configuration that is not annoying and does the job.
+
+#+BEGIN_SRC ini
+	[mypy]
+	warn_unused_ignores = True
+	follow_imports = skip
+	show_error_context = True
+	warn_incomplete_stub = True
+	ignore_missing_imports = True
+	check_untyped_defs = True
+	cache_dir = /dev/null
+	# Cannot enable this one as we still allow defining functions without any types.
+	# disallow_untyped_defs = True
+	warn_redundant_casts = True
+	warn_unused_configs = True
+	strict_optional = True
+#+END_SRC
+
 **  tox & emacs                                                 :tox:python:
 
 I am havy user of *tox*. Every new project has one and it is not only because I
