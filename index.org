@@ -60,3 +60,9 @@ Powerful combo of tox, projectile, and helm.
 
 ** Just another attempt
 Another attempt to have a place to write short notes. In org-mode. Without tooling.
+
+1. Update =index.org=
+2. Export to HTML file. In spacemacs it is =,meehh=.
+3. Push to github.
+
+The theme for HTML page is [[https://github.com/fniessen/org-html-themes#bigblow][Bigblow]].
