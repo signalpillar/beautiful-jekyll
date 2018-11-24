@@ -96,3 +96,6 @@ attributes just using pure type annotations it understands how to map the fields
 On [[https://twitter.com/signalpillar/][twitter]]
 * Miscellaneous
 ** TODO Complete About section to this page
+** Links
+*** Configuration
+- [[https://dotfiles.github.io][Dotfiles]]
