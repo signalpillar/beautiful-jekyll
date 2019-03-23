@@ -1,5 +1,5 @@
 # -*- mode: org; -*-
-
+#+TITLE: Signalpillar Blog
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/bigblow/css/htmlize.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/bigblow/css/bigblow.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/bigblow/css/hideshow.css"/>
