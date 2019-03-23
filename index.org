@@ -13,8 +13,9 @@
 #+HTML_HEAD: <script type="text/javascript" src="styles/bigblow/js/bigblow.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="styles/bigblow/js/hideshow.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
-
-* signalpillar
+* Stream
+#+HTML: <script id="journalist-broadcast-297188287" async src="https://journali.st/broadcasts/297188287-widget-4.js"></script>
+* Notes
 **  mypy.ini                                                   :python:mypy:
 The configuration that is not annoying and does the job.
 
