@@ -125,7 +125,11 @@ place where it failed. Maybe I didn't know how to cook it properly or I don't
 have a case for it.
 
 * About
-On [[https://twitter.com/signalpillar/][twitter]]
+
+#+ATTR_HTML: :width 100%
+| file:./imgs/retrobox.png | Co-founder of [[https://retrobox.signaldata.xyz/][RetroBot]], a Slack app for bias-free retrospectives |
+| [[file:./imgs/twitter.png]]    | [[https://twitter.com/signalpillar][signalpillar]]                                                     |
+
 * Miscellaneous
 ** TODO Complete About section to this page
 ** Links
