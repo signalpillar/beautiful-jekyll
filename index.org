@@ -87,8 +87,32 @@ Another attempt to have a place to write short notes. In org-mode. Without tooli
 
 The theme for HTML page is [[https://github.com/fniessen/org-html-themes#bigblow][Bigblow]].
 * Drafts
-** TODO Another tool on my toolbelt                                 :python:
-SCHEDULED: <2018-11-24 Sat>
+** My dream environment
+Something from the list I have already and something is still in the plans.
+
+OS: [[https://nixos.org/][NixOs]] to rule them all.
+
+Editor: Spacemacs
+
+HTTP: [[https://github.com/pashky/restclient.el][restclient.el]]
+
+Shell: [[https://github.com/nushell/nushell][nushell]]
+
+** Another tool on my tool belt                                     :python:
+*** Dependency injection
+
+[[https://pypi.org/project/injector/][injector]] is an underrated project. I can tell that because I haven't see a single
+project in Python that uses it (except of one I am working on).
+Works with the type hints and encourages good style in code writing:
+
+- no globals
+- testable code
+
+I didn't quite determined best practices how to use injector for integration
+tests in the application.
+
+[[https://pypi.org/project/Flask-Injector/][flask-injector]] is a small extension to the injector library, that brings some
+new dependencies from Flask world and =request= scope.
 
 *** Load/Dump of structural data
 
@@ -129,9 +153,3 @@ have a case for it.
 #+ATTR_HTML: :width 100%
 | file:./imgs/retrobox.png | Co-founder of [[https://retrobox.signaldata.xyz/][RetroBot]], a Slack app for bias-free retrospectives |
 | [[file:./imgs/twitter.png]]    | [[https://twitter.com/signalpillar][signalpillar]]                                                     |
-
-* Miscellaneous
-** TODO Complete About section to this page
-** Links
-*** Configuration
-- [[https://dotfiles.github.io][Dotfiles]]
