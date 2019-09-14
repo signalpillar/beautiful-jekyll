@@ -13,6 +13,17 @@
 #+HTML_HEAD: <script type="text/javascript" src="styles/bigblow/js/bigblow.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="styles/bigblow/js/hideshow.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+#+begin_export html
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147976773-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147976773-1');
+</script>
+#+end_export
 * Stream
 #+HTML: <script id="journalist-broadcast-297188287" async src="https://journali.st/broadcasts/297188287-widget-4.js"></script>
 * Notes
