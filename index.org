@@ -25,7 +25,7 @@
 </script>
 #+end_export
 * Stream
-#+HTML: <script id="journalist-broadcast-439418933" async src="https://journali.st/broadcasts/439418933-widget-4.js"></script>
+#+HTML: <script id="journalist-broadcast-439418933" async src="https://journali.st/broadcasts/439418933.js"></script>
 * Notes
 **  mypy.ini                                                   :python:mypy:
 The configuration that is not annoying and does the job.
