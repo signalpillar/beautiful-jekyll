@@ -1,5 +1,5 @@
 # -*- mode: org; -*-
-#+TITLE: Signalpillar Blog
+#+TITLE: signalpillar
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/bigblow/css/htmlize.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/bigblow/css/bigblow.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/bigblow/css/hideshow.css"/>
@@ -24,8 +24,6 @@
   gtag('config', 'UA-147976773-1');
 </script>
 #+end_export
-* Stream
-#+HTML: <script id="journalist-broadcast-439418933" async src="https://journali.st/broadcasts/439418933.js"></script>
 * Notes
 **  mypy.ini                                                   :python:mypy:
 The configuration that is not annoying and does the job.
