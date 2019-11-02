@@ -101,7 +101,7 @@ Something from the list I have already and something is still in the plans.
 
 OS: [[https://nixos.org/][NixOs]] to rule them all.
 
-Editor: Spacemacs
+Editor: Emacs (Spacemacs bundle, evil)
 
 HTTP: [[https://github.com/pashky/restclient.el][restclient.el]]
 
@@ -160,5 +160,5 @@ have a case for it.
 * About
 
 #+ATTR_HTML: :width 100%
-| file:./imgs/retrobox.png | Co-founder of [[https://retrobox.signaldata.xyz/][RetroBot]], a Slack app for bias-free retrospectives |
+| file:./imgs/retrobox.png | Co-founder of [[https://retrobox.signaldata.xyz/][Retrobox]], a Slack app for bias-free retrospectives |
 | [[file:./imgs/twitter.png]]    | [[https://twitter.com/signalpillar][signalpillar]]                                                     |
