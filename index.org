@@ -46,7 +46,7 @@ The configuration that is not annoying and does the job.
 
 **  tox & emacs                                                 :tox:python:
 
-I am havy user of *tox*. Every new project has one and it is not only because I
+I am heavy user of *tox*. Every new project has one and it is not only because I
 can keep my dependencies and tools configuration in one place but also because I
 have a nice integration with Emacs.
 
