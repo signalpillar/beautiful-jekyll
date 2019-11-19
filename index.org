@@ -25,7 +25,13 @@
 </script>
 #+end_export
 * Notes
-**  mypy.ini                                                   :python:mypy:
+:PROPERTIES:
+:CUSTOM_ID: section-notes
+:END:
+** mypy.ini                                                    :python:mypy:
+:PROPERTIES:
+:CUSTOM_ID: mypy-config
+:END:
 The configuration that is not annoying and does the job.
 
 #+BEGIN_SRC ini
@@ -44,7 +50,10 @@ The configuration that is not annoying and does the job.
 	strict_optional = True
 #+END_SRC
 
-**  tox & emacs                                                 :tox:python:
+** tox & emacs                                                  :tox:python:
+:PROPERTIES:
+:CUSTOM_ID: tox-and-emacs
+:END:
 
 I am heavy user of *tox*. Every new project has one and it is not only because I
 can keep my dependencies and tools configuration in one place but also because I
@@ -88,6 +97,9 @@ Powerful combo of tox, projectile, and helm.
 #+END_SRC
 
 ** Just another attempt
+:PROPERTIES:
+:CUSTOM_ID: just-another-attempt
+:END:
 Another attempt to have a place to write short notes. In org-mode. Without tooling.
 
 1. Update =index.org=
@@ -95,17 +107,13 @@ Another attempt to have a place to write short notes. In org-mode. Without tooli
 3. Push to github.
 
 The theme for HTML page is [[https://github.com/fniessen/org-html-themes#bigblow][Bigblow]].
+
+Useful resources for blog in org-mode:
+- [[https://writequit.org/articles/emacs-org-mode-generate-ids.html][Custom IDs for the anchors]]
 * Drafts
-** My dream environment
-Something from the list I have already and something is still in the plans.
-
-OS: [[https://nixos.org/][NixOs]] to rule them all.
-
-Editor: Emacs (Spacemacs bundle, evil)
-
-HTTP: [[https://github.com/pashky/restclient.el][restclient.el]]
-
-Shell: [[https://github.com/nushell/nushell][nushell]]
+:PROPERTIES:
+:CUSTOM_ID: section-drafts
+:END:
 
 ** Another tool on my tool belt                                     :python:
 *** Dependency injection
@@ -158,7 +166,22 @@ place where it failed. Maybe I didn't know how to cook it properly or I don't
 have a case for it.
 
 * About
+:PROPERTIES:
+:CUSTOM_ID: section-about
+:END:
 
 #+ATTR_HTML: :width 100%
 | file:./imgs/retrobox.png | Co-founder of [[https://retrobox.signaldata.xyz/][Retrobox]], a Slack app for bias-free retrospectives |
 | [[file:./imgs/twitter.png]]    | [[https://twitter.com/signalpillar][signalpillar]]                                                     |
+
+** My dream setup
+:PROPERTIES:
+:CUSTOM_ID: my-dream-setup
+:END:
+
+- Laptop: System76 Galago
+- OS: [[https://nixos.org/][NixOs]] to rule them all
+- Editor: Emacs (Spacemacs bundle, evil)
+- HTTP client: [[https://github.com/pashky/restclient.el][restclient.el]]
+- Shell: [[https://github.com/nushell/nushell][nushell]]
+- Desk: [[https://www.upliftdesk.com/uplift-v2-120-degree-standing-desk/][uplift]]
