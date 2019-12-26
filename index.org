@@ -149,14 +149,24 @@ new dependencies from Flask world and =request= scope.
 It is an easy way to declare configuration structure in the file, payload or
 request params, validate them and serialise back if needed.
 
-*Tools*
+*Libraries*
+
+I've tried almost all the libraries from the list below. *pydantic* is my
+favorite at the moment.
 
 [[https://pypi.org/project/pydantic/][pydantic]] another data validation and settings management library that heavily
-relies on type hints.
+relies on type hints. The validation errors it
+produces can be used directly as part of the Web API error reporting.
 
 [[https://github.com/ltworf/typedload][typedload]] is an amazing library that helps load/dump dictionary to the data
 class or =typing.NamedTuple= with minimal effort. Without any additional
-attributes just using pure type annotations it understands how to map the fields.
+attributes just using pure type annotations it understands how to map the
+fields. Unfortunately the licence doens't allow me to use the library in the
+proprietary projects.
+
+[[https://python-typical.org][typical]] library is similar to pydantic. It suggests nice extra types (secret,
+URL etc) and claims to be the fastest type validation library. Relies on
+dataclasses (3.7).
 
 [[https://pypi.org/project/attrs/][attrs]] + [[https://pypi.org/project/cattrs/][cattrs]] while attrs library is very popular it is a last choice for me. =cattrs=
 at the moment I've tried it was the lib that didn't have a nice error type that
