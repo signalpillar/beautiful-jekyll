@@ -184,7 +184,7 @@ find "$(brew --prefix)/Caskroom/"*'/.metadata' -type f -name '*.rb' | xargs grep
 :CUSTOM_ID: my-dream-setup
 :END:
 
-- Laptop: System76 Galago
+- Laptop: Linux Laptop
 - OS: [[https://nixos.org/][NixOs]] to rule them all
 - Editor: Emacs (Spacemacs bundle, evil)
 - HTTP client: [[https://github.com/pashky/restclient.el][restclient.el]]
