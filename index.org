@@ -164,7 +164,12 @@ I could catch and be sure that is validation error. The library could raise
 =ValueError=, for instance, and error wouldn't give me much information about the
 place where it failed. Maybe I didn't know how to cook it properly or I don't
 have a case for it.
-
+** cheatsheet
+*** Error: Cask 'java' is unreadable: undefined method `undent' for #<String:0x00007f8fea93cc78>
+[[https://github.com/Homebrew/homebrew-cask/issues/49716#issuecomment-413515303][Source]]
+#+begin_example
+find "$(brew --prefix)/Caskroom/"*'/.metadata' -type f -name '*.rb' | xargs grep 'EOS.undent' --files-with-matches | xargs sed -i '' 's/EOS.undent/EOS/'
+#+end_example
 * About
 :PROPERTIES:
 :CUSTOM_ID: section-about
