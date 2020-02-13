@@ -152,24 +152,14 @@ new dependencies from Flask world and =request= scope.
 It is an easy way to declare configuration structure in the file, payload or
 request params, validate them and serialise back if needed.
 
-*Libraries*
-
-I've tried almost all the libraries from the list below. *pydantic* is my
-favorite at the moment.
+*Tools*
 
 [[https://pypi.org/project/pydantic/][pydantic]] another data validation and settings management library that heavily
-relies on type hints. The validation errors it
-produces can be used directly as part of the Web API error reporting.
+relies on type hints.
 
 [[https://github.com/ltworf/typedload][typedload]] is an amazing library that helps load/dump dictionary to the data
 class or =typing.NamedTuple= with minimal effort. Without any additional
-attributes just using pure type annotations it understands how to map the
-fields. Unfortunately the licence doens't allow me to use the library in the
-proprietary projects.
-
-[[https://python-typical.org][typical]] library is similar to pydantic. It suggests nice extra types (secret,
-URL etc) and claims to be the fastest type validation library. Relies on
-dataclasses (3.7).
+attributes just using pure type annotations it understands how to map the fields.
 
 [[https://pypi.org/project/attrs/][attrs]] + [[https://pypi.org/project/cattrs/][cattrs]] while attrs library is very popular it is a last choice for me. =cattrs=
 at the moment I've tried it was the lib that didn't have a nice error type that
@@ -177,7 +167,12 @@ I could catch and be sure that is validation error. The library could raise
 =ValueError=, for instance, and error wouldn't give me much information about the
 place where it failed. Maybe I didn't know how to cook it properly or I don't
 have a case for it.
-
+** cheatsheet
+*** Error: Cask 'java' is unreadable: undefined method `undent' for #<String:0x00007f8fea93cc78>
+[[https://github.com/Homebrew/homebrew-cask/issues/49716#issuecomment-413515303][Source]]
+#+begin_example
+find "$(brew --prefix)/Caskroom/"*'/.metadata' -type f -name '*.rb' | xargs grep 'EOS.undent' --files-with-matches | xargs sed -i '' 's/EOS.undent/EOS/'
+#+end_example
 * About
 :PROPERTIES:
 :CUSTOM_ID: section-about
@@ -192,7 +187,7 @@ have a case for it.
 :CUSTOM_ID: my-dream-setup
 :END:
 
-- Laptop: System76 Galago
+- Laptop: Linux Laptop
 - OS: [[https://nixos.org/][NixOs]] to rule them all
 - Editor: Emacs (Spacemacs bundle, evil)
 - HTTP client: [[https://github.com/pashky/restclient.el][restclient.el]]

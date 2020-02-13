@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-12-26 Thu 09:19 -->
+<!-- 2020-02-10 Mon 13:36 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>signalpillar</title>
@@ -267,10 +267,15 @@ for the JavaScript code in this tag.
 </li>
 <li><a href="#section-drafts">2. Drafts</a>
 <ul>
-<li><a href="#org5662600">2.1. Another tool on my tool belt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span></span></a>
+<li><a href="#org2019214">2.1. Another tool on my tool belt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span></span></a>
 <ul>
-<li><a href="#orgcc71271">2.1.1. Dependency injection</a></li>
-<li><a href="#orgc97b8e4">2.1.2. Load/Dump of structural data</a></li>
+<li><a href="#org7cc3f1e">2.1.1. Dependency injection</a></li>
+<li><a href="#org10ff36d">2.1.2. Load/Dump of structural data</a></li>
+</ul>
+</li>
+<li><a href="#org6522fae">2.2. cheatsheet</a>
+<ul>
+<li><a href="#orgf0a2ce3">2.2.1. Error: Cask 'java' is unreadable: undefined method `undent' for #&lt;String:0x00007f8fea93cc78&gt;</a></li>
 </ul>
 </li>
 </ul>
@@ -292,11 +297,11 @@ for the JavaScript code in this tag.
 
   gtag('config', 'UA-147976773-1');
 </script>
-<div id="outline-container-org5aa9a8d" class="outline-2">
+<div id="outline-container-org6d95dd2" class="outline-2">
 <h2 id="section-notes"><span class="section-number-2">1</span> Notes</h2>
 <div class="outline-text-2" id="text-section-notes">
 </div>
-<div id="outline-container-org63e2ab3" class="outline-3">
+<div id="outline-container-org6ddba4d" class="outline-3">
 <h3 id="mypy-config"><span class="section-number-3">1.1</span> mypy.ini&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span>&#xa0;<span class="mypy">mypy</span></span></h3>
 <div class="outline-text-3" id="text-mypy-config">
 <p>
@@ -322,7 +327,7 @@ The configuration that is not annoying and does the job.
 </div>
 </div>
 
-<div id="outline-container-org669db06" class="outline-3">
+<div id="outline-container-org81108b3" class="outline-3">
 <h3 id="tox-and-emacs"><span class="section-number-3">1.2</span> tox &amp; emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tox">tox</span>&#xa0;<span class="python">python</span></span></h3>
 <div class="outline-text-3" id="text-tox-and-emacs">
 <p>
@@ -376,7 +381,7 @@ Powerful combo of tox, projectile, and helm.
 </div>
 </div>
 
-<div id="outline-container-org403f282" class="outline-3">
+<div id="outline-container-org9ed1ccf" class="outline-3">
 <h3 id="just-another-attempt"><span class="section-number-3">1.3</span> Just another attempt</h3>
 <div class="outline-text-3" id="text-just-another-attempt">
 <p>
@@ -402,17 +407,17 @@ Useful resources for blog in org-mode:
 </div>
 </div>
 </div>
-<div id="outline-container-orgae4ef1c" class="outline-2">
+<div id="outline-container-org88b965d" class="outline-2">
 <h2 id="section-drafts"><span class="section-number-2">2</span> Drafts</h2>
 <div class="outline-text-2" id="text-section-drafts">
 </div>
 
-<div id="outline-container-org5662600" class="outline-3">
-<h3 id="org5662600"><span class="section-number-3">2.1</span> Another tool on my tool belt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span></span></h3>
+<div id="outline-container-org2019214" class="outline-3">
+<h3 id="org2019214"><span class="section-number-3">2.1</span> Another tool on my tool belt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span></span></h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-orgcc71271" class="outline-4">
-<h4 id="orgcc71271"><span class="section-number-4">2.1.1</span> Dependency injection</h4>
+<div id="outline-container-org7cc3f1e" class="outline-4">
+<h4 id="org7cc3f1e"><span class="section-number-4">2.1.1</span> Dependency injection</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
 <a href="https://pypi.org/project/injector/">injector</a> is an underrated project. I can tell that because I haven't see a single
@@ -437,8 +442,8 @@ new dependencies from Flask world and <code>request</code> scope.
 </div>
 </div>
 
-<div id="outline-container-orgc97b8e4" class="outline-4">
-<h4 id="orgc97b8e4"><span class="section-number-4">2.1.2</span> Load/Dump of structural data</h4>
+<div id="outline-container-org10ff36d" class="outline-4">
+<h4 id="org10ff36d"><span class="section-number-4">2.1.2</span> Load/Dump of structural data</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
 <b>What do we want to do?</b>
@@ -465,32 +470,18 @@ request params, validate them and serialise back if needed.
 </p>
 
 <p>
-<b>Libraries</b>
-</p>
-
-<p>
-I've tried almost all the libraries from the list below. <b>pydantic</b> is my
-favorite at the moment.
+<b>Tools</b>
 </p>
 
 <p>
 <a href="https://pypi.org/project/pydantic/">pydantic</a> another data validation and settings management library that heavily
-relies on type hints. The validation errors it
-produces can be used directly as part of the Web API error reporting.
+relies on type hints.
 </p>
 
 <p>
 <a href="https://github.com/ltworf/typedload">typedload</a> is an amazing library that helps load/dump dictionary to the data
 class or <code>typing.NamedTuple</code> with minimal effort. Without any additional
-attributes just using pure type annotations it understands how to map the
-fields. Unfortunately the licence doens't allow me to use the library in the
-proprietary projects.
-</p>
-
-<p>
-<a href="https://python-typical.org">typical</a> library is similar to pydantic. It suggests nice extra types (secret,
-URL etc) and claims to be the fastest type validation library. Relies on
-dataclasses (3.7).
+attributes just using pure type annotations it understands how to map the fields.
 </p>
 
 <p>
@@ -504,9 +495,24 @@ have a case for it.
 </div>
 </div>
 </div>
+<div id="outline-container-org6522fae" class="outline-3">
+<h3 id="org6522fae"><span class="section-number-3">2.2</span> cheatsheet</h3>
+<div class="outline-text-3" id="text-2-2">
 </div>
-
-<div id="outline-container-orgc86a2f1" class="outline-2">
+<div id="outline-container-orgf0a2ce3" class="outline-4">
+<h4 id="orgf0a2ce3"><span class="section-number-4">2.2.1</span> Error: Cask 'java' is unreadable: undefined method `undent' for #&lt;String:0x00007f8fea93cc78&gt;</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+<a href="https://github.com/Homebrew/homebrew-cask/issues/49716#issuecomment-413515303">Source</a>
+</p>
+<pre class="example">
+find "$(brew --prefix)/Caskroom/"*'/.metadata' -type f -name '*.rb' | xargs grep 'EOS.undent' --files-with-matches | xargs sed -i '' 's/EOS.undent/EOS/'
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8fe2406" class="outline-2">
 <h2 id="section-about"><span class="section-number-2">3</span> About</h2>
 <div class="outline-text-2" id="text-section-about">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" width="100%">
@@ -531,7 +537,7 @@ have a case for it.
 </table>
 </div>
 
-<div id="outline-container-org9c03134" class="outline-3">
+<div id="outline-container-orgce35b6a" class="outline-3">
 <h3 id="my-dream-setup"><span class="section-number-3">3.1</span> My dream setup</h3>
 <div class="outline-text-3" id="text-my-dream-setup">
 <ul class="org-ul">
@@ -548,7 +554,7 @@ have a case for it.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Volodymyr Vitvitskyi</p>
-<p class="date">Created: 2019-12-26 Thu 09:19</p>
+<p class="date">Created: 2020-02-10 Mon 13:36</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
