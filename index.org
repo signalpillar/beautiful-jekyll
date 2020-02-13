@@ -110,11 +110,14 @@ The theme for HTML page is [[https://github.com/fniessen/org-html-themes#bigblow
 
 Useful resources for blog in org-mode:
 - [[https://writequit.org/articles/emacs-org-mode-generate-ids.html][Custom IDs for the anchors]]
+* Links
+** Golang
+- [[https://the-zen-of-go.netlify.com][Zen (like Python has)]]
+- [[https://talks.godoc.org/github.com/davecheney/presentations/gopher-puzzlers.slide#18][Gopher puzzlers]]
 * Drafts
 :PROPERTIES:
 :CUSTOM_ID: section-drafts
 :END:
-
 ** Another tool on my tool belt                                     :python:
 *** Dependency injection
 
