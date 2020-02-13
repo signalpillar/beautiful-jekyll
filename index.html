@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-02-10 Mon 13:36 -->
+<!-- 2020-02-13 Thu 20:04 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>signalpillar</title>
@@ -265,24 +265,29 @@ for the JavaScript code in this tag.
 <li><a href="#just-another-attempt">1.3. Just another attempt</a></li>
 </ul>
 </li>
-<li><a href="#section-drafts">2. Drafts</a>
+<li><a href="#org7c20d60">2. Links</a>
 <ul>
-<li><a href="#org2019214">2.1. Another tool on my tool belt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span></span></a>
-<ul>
-<li><a href="#org7cc3f1e">2.1.1. Dependency injection</a></li>
-<li><a href="#org10ff36d">2.1.2. Load/Dump of structural data</a></li>
+<li><a href="#org5755932">2.1. Golang</a></li>
 </ul>
 </li>
-<li><a href="#org6522fae">2.2. cheatsheet</a>
+<li><a href="#section-drafts">3. Drafts</a>
 <ul>
-<li><a href="#orgf0a2ce3">2.2.1. Error: Cask 'java' is unreadable: undefined method `undent' for #&lt;String:0x00007f8fea93cc78&gt;</a></li>
+<li><a href="#orgbae6d4a">3.1. Another tool on my tool belt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span></span></a>
+<ul>
+<li><a href="#org666ad23">3.1.1. Dependency injection</a></li>
+<li><a href="#org3ae22bc">3.1.2. Load/Dump of structural data</a></li>
+</ul>
+</li>
+<li><a href="#org09843ea">3.2. cheatsheet</a>
+<ul>
+<li><a href="#org7049e75">3.2.1. Error: Cask 'java' is unreadable: undefined method `undent' for #&lt;String:0x00007f8fea93cc78&gt;</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#section-about">3. About</a>
+<li><a href="#section-about">4. About</a>
 <ul>
-<li><a href="#my-dream-setup">3.1. My dream setup</a></li>
+<li><a href="#my-dream-setup">4.1. My dream setup</a></li>
 </ul>
 </li>
 </ul>
@@ -297,11 +302,11 @@ for the JavaScript code in this tag.
 
   gtag('config', 'UA-147976773-1');
 </script>
-<div id="outline-container-org6d95dd2" class="outline-2">
+<div id="outline-container-orgf417284" class="outline-2">
 <h2 id="section-notes"><span class="section-number-2">1</span> Notes</h2>
 <div class="outline-text-2" id="text-section-notes">
 </div>
-<div id="outline-container-org6ddba4d" class="outline-3">
+<div id="outline-container-orgb86d538" class="outline-3">
 <h3 id="mypy-config"><span class="section-number-3">1.1</span> mypy.ini&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span>&#xa0;<span class="mypy">mypy</span></span></h3>
 <div class="outline-text-3" id="text-mypy-config">
 <p>
@@ -327,7 +332,7 @@ The configuration that is not annoying and does the job.
 </div>
 </div>
 
-<div id="outline-container-org81108b3" class="outline-3">
+<div id="outline-container-org35f9bf8" class="outline-3">
 <h3 id="tox-and-emacs"><span class="section-number-3">1.2</span> tox &amp; emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tox">tox</span>&#xa0;<span class="python">python</span></span></h3>
 <div class="outline-text-3" id="text-tox-and-emacs">
 <p>
@@ -350,38 +355,38 @@ Powerful combo of tox, projectile, and helm.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-elisp">(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">sp/tox/find-tox-dirs-in-project</span> (project-root-dir)
+<pre class="src src-elisp">(<span style="color: #268bd2; font-weight: bold;">defun</span> <span style="color: #8700af; font-weight: bold;">sp/tox/find-tox-dirs-in-project</span> (project-root-dir)
 
-  (<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">-find-toxenv-bin-dirs</span> (root)
+  (<span style="color: #268bd2; font-weight: bold;">defun</span> <span style="color: #8700af; font-weight: bold;">-find-toxenv-bin-dirs</span> (root)
     (projectile-files-via-ext-command
      root
-     (format <span style="color: #8b2252;">"find %s -type d -name 'bin' -path '*/.tox/*/bin' -print0"</span> root)))
+     (format <span style="color: #2aa198;">"find %s -type d -name 'bin' -path '*/.tox/*/bin' -print0"</span> root)))
 
-  (-map (<span style="color: #a020f0;">lambda</span> (file) (sp/path/parent-dir (sp/path/parent-dir file)))
+  (-map (<span style="color: #268bd2; font-weight: bold;">lambda</span> (file) (sp/path/parent-dir (sp/path/parent-dir file)))
         (-find-toxenv-bin-dirs project-root-dir)))
 
-(<span style="color: #a020f0;">defun</span> <span style="color: #0000ff;">sp/tox/activate-current-project-tox-env</span> ()
-  (<span style="color: #a020f0;">interactive</span>)
-  (<span style="color: #a020f0;">let*</span> (
+(<span style="color: #268bd2; font-weight: bold;">defun</span> <span style="color: #8700af; font-weight: bold;">sp/tox/activate-current-project-tox-env</span> ()
+  (<span style="color: #268bd2; font-weight: bold;">interactive</span>)
+  (<span style="color: #268bd2; font-weight: bold;">let*</span> (
          (venv-dirs (sp/tox/find-tox-dirs-in-project (projectile-project-root)))
          (venv-dirs-length (length venv-dirs)))
-    (<span style="color: #a020f0;">progn</span>
+    (<span style="color: #268bd2; font-weight: bold;">progn</span>
       (venv-set-location
-       (<span style="color: #a020f0;">if</span> (&gt; venv-dirs-length <span style="color: #008b8b;">1</span>)
-           (helm-comp-read <span style="color: #8b2252;">"Choose tox directory to workon"</span> venv-dirs)
-         (<span style="color: #a020f0;">if</span> (= venv-dirs-length <span style="color: #008b8b;">0</span>)
-             (<span style="color: #ff0000; font-weight: bold;">error</span> <span style="color: #8b2252;">"The project doesn't have created tox virtual environments."</span>)
+       (<span style="color: #268bd2; font-weight: bold;">if</span> (&gt; venv-dirs-length <span style="color: #8700af;">1</span>)
+           (helm-comp-read <span style="color: #2aa198;">"Choose tox directory to workon"</span> venv-dirs)
+         (<span style="color: #268bd2; font-weight: bold;">if</span> (= venv-dirs-length <span style="color: #8700af;">0</span>)
+             (<span style="color: #dc752f; background-color: #ffffff;">error</span> <span style="color: #2aa198;">"The project doesn't have created tox virtual environments."</span>)
            (car venv-dirs))))
       (venv-workon)
       (add-to-list 'python-shell-extra-pythonpaths (projectile-project-root))
-      (add-to-list 'python-shell-extra-pythonpaths (format <span style="color: #8b2252;">"%s/src"</span> (projectile-project-root)))
+      (add-to-list 'python-shell-extra-pythonpaths (format <span style="color: #2aa198;">"%s/src"</span> (projectile-project-root)))
       )))
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org9ed1ccf" class="outline-3">
+<div id="outline-container-org251c841" class="outline-3">
 <h3 id="just-another-attempt"><span class="section-number-3">1.3</span> Just another attempt</h3>
 <div class="outline-text-3" id="text-just-another-attempt">
 <p>
@@ -407,18 +412,31 @@ Useful resources for blog in org-mode:
 </div>
 </div>
 </div>
-<div id="outline-container-org88b965d" class="outline-2">
-<h2 id="section-drafts"><span class="section-number-2">2</span> Drafts</h2>
+<div id="outline-container-org7c20d60" class="outline-2">
+<h2 id="org7c20d60"><span class="section-number-2">2</span> Links</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org5755932" class="outline-3">
+<h3 id="org5755932"><span class="section-number-3">2.1</span> Golang</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li><a href="https://the-zen-of-go.netlify.com">Zen (like Python has)</a></li>
+<li><a href="https://talks.godoc.org/github.com/davecheney/presentations/gopher-puzzlers.slide#18">Gopher puzzlers</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org814ba76" class="outline-2">
+<h2 id="section-drafts"><span class="section-number-2">3</span> Drafts</h2>
 <div class="outline-text-2" id="text-section-drafts">
 </div>
-
-<div id="outline-container-org2019214" class="outline-3">
-<h3 id="org2019214"><span class="section-number-3">2.1</span> Another tool on my tool belt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span></span></h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-orgbae6d4a" class="outline-3">
+<h3 id="orgbae6d4a"><span class="section-number-3">3.1</span> Another tool on my tool belt&#xa0;&#xa0;&#xa0;<span class="tag"><span class="python">python</span></span></h3>
+<div class="outline-text-3" id="text-3-1">
 </div>
-<div id="outline-container-org7cc3f1e" class="outline-4">
-<h4 id="org7cc3f1e"><span class="section-number-4">2.1.1</span> Dependency injection</h4>
-<div class="outline-text-4" id="text-2-1-1">
+<div id="outline-container-org666ad23" class="outline-4">
+<h4 id="org666ad23"><span class="section-number-4">3.1.1</span> Dependency injection</h4>
+<div class="outline-text-4" id="text-3-1-1">
 <p>
 <a href="https://pypi.org/project/injector/">injector</a> is an underrated project. I can tell that because I haven't see a single
 project in Python that uses it (except of one I am working on).
@@ -442,9 +460,9 @@ new dependencies from Flask world and <code>request</code> scope.
 </div>
 </div>
 
-<div id="outline-container-org10ff36d" class="outline-4">
-<h4 id="org10ff36d"><span class="section-number-4">2.1.2</span> Load/Dump of structural data</h4>
-<div class="outline-text-4" id="text-2-1-2">
+<div id="outline-container-org3ae22bc" class="outline-4">
+<h4 id="org3ae22bc"><span class="section-number-4">3.1.2</span> Load/Dump of structural data</h4>
+<div class="outline-text-4" id="text-3-1-2">
 <p>
 <b>What do we want to do?</b>
 </p>
@@ -495,13 +513,13 @@ have a case for it.
 </div>
 </div>
 </div>
-<div id="outline-container-org6522fae" class="outline-3">
-<h3 id="org6522fae"><span class="section-number-3">2.2</span> cheatsheet</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-org09843ea" class="outline-3">
+<h3 id="org09843ea"><span class="section-number-3">3.2</span> cheatsheet</h3>
+<div class="outline-text-3" id="text-3-2">
 </div>
-<div id="outline-container-orgf0a2ce3" class="outline-4">
-<h4 id="orgf0a2ce3"><span class="section-number-4">2.2.1</span> Error: Cask 'java' is unreadable: undefined method `undent' for #&lt;String:0x00007f8fea93cc78&gt;</h4>
-<div class="outline-text-4" id="text-2-2-1">
+<div id="outline-container-org7049e75" class="outline-4">
+<h4 id="org7049e75"><span class="section-number-4">3.2.1</span> Error: Cask 'java' is unreadable: undefined method `undent' for #&lt;String:0x00007f8fea93cc78&gt;</h4>
+<div class="outline-text-4" id="text-3-2-1">
 <p>
 <a href="https://github.com/Homebrew/homebrew-cask/issues/49716#issuecomment-413515303">Source</a>
 </p>
@@ -512,8 +530,8 @@ find "$(brew --prefix)/Caskroom/"*'/.metadata' -type f -name '*.rb' | xargs grep
 </div>
 </div>
 </div>
-<div id="outline-container-org8fe2406" class="outline-2">
-<h2 id="section-about"><span class="section-number-2">3</span> About</h2>
+<div id="outline-container-org1f7dcf0" class="outline-2">
+<h2 id="section-about"><span class="section-number-2">4</span> About</h2>
 <div class="outline-text-2" id="text-section-about">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" width="100%">
 
@@ -537,11 +555,11 @@ find "$(brew --prefix)/Caskroom/"*'/.metadata' -type f -name '*.rb' | xargs grep
 </table>
 </div>
 
-<div id="outline-container-orgce35b6a" class="outline-3">
-<h3 id="my-dream-setup"><span class="section-number-3">3.1</span> My dream setup</h3>
+<div id="outline-container-org9c0218c" class="outline-3">
+<h3 id="my-dream-setup"><span class="section-number-3">4.1</span> My dream setup</h3>
 <div class="outline-text-3" id="text-my-dream-setup">
 <ul class="org-ul">
-<li>Laptop: System76 Galago</li>
+<li>Laptop: Linux Laptop</li>
 <li>OS: <a href="https://nixos.org/">NixOs</a> to rule them all</li>
 <li>Editor: Emacs (Spacemacs bundle, evil)</li>
 <li>HTTP client: <a href="https://github.com/pashky/restclient.el">restclient.el</a></li>
@@ -554,7 +572,7 @@ find "$(brew --prefix)/Caskroom/"*'/.metadata' -type f -name '*.rb' | xargs grep
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Volodymyr Vitvitskyi</p>
-<p class="date">Created: 2020-02-10 Mon 13:36</p>
+<p class="date">Created: 2020-02-13 Thu 20:04</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
