@@ -28,6 +28,19 @@
 :PROPERTIES:
 :CUSTOM_ID: section-notes
 :END:
+** Install Manjaro On Oracle Virtualbox
+Manjaro is super easy to install in VM, the installer is beautiful and simple.
+To bootstrap the OS install VBox guest tools and =chezmoi= to apply my configuration.
+#+begin_example
+sudo pacman -S virtualbox-guest-utils chezmoi
+#+end_example
+*** Video
+To get Auto-Resize Guest Display working switch 'VBoxSVGA' adapter from 'VMSVGA'.
+
+#+begin_example
+sudo mhwd -r pci video-virtualmachine
+#+end_example
+
 ** mypy.ini                                                    :python:mypy:
 :PROPERTIES:
 :CUSTOM_ID: mypy-config
@@ -173,6 +186,33 @@ have a case for it.
 #+begin_example
 find "$(brew --prefix)/Caskroom/"*'/.metadata' -type f -name '*.rb' | xargs grep 'EOS.undent' --files-with-matches | xargs sed -i '' 's/EOS.undent/EOS/'
 #+end_example
+** Note taking
+
+*Quick start*
+
+- document your knowledge
+- document all in one document - one markdown (org) document for everything
+- don’t worry about the size of it. Extract only the topics that have a critical
+  size. What is critical is for you to determine but mostly you'll feel it by
+  structure not amount of text. If structure is super extensive that is the
+  time.
+- the structure develops organically
+*** *Suggested software*
+
+*Typora* (no mobile support, no good tables support like OneNote)
+
+- has a great performance
+- it’s easy to insert media in it
+- has good support of lists
+- has outline view
+- supports mermaid diagrams
+
+*Joplin*
+- has end-to-end encyprtion
+- supports many platforms
+
+*Bear* (only Apple OS)
+
 * About
 :PROPERTIES:
 :CUSTOM_ID: section-about
