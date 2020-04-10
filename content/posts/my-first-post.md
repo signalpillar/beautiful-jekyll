@@ -1,7 +1,7 @@
 ---
 title: "Hugo"
 date: 2020-04-10T20:12:35+01:00
-draft: true
+draft: false
 ---
 
 I decided to move from a single `org` file to hugo and have "normal" design of
