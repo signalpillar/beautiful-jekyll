@@ -1,0 +1,29 @@
+---
+title: "Notetaking"
+date: 2020-03-29T20:27:46+01:00
+draft: false
+---
+*My practices*
+
+- document all in one document - one markdown (org) document for everything
+- don’t worry about the size of it. Extract only the topics that have a critical
+  size. What is critical is for you to determine but mostly you'll feel it by
+  structure not amount of text. If structure is super extensive that is the
+  time.
+- the structure develops organically
+
+*Suggested software*
+
+*Typora* (no mobile support, no good tables support like OneNote has)
+
+- has a great performance
+- it’s easy to insert media in it
+- has good support of lists
+- has outline view
+- supports mermaid diagrams
+
+*Joplin*
+- has end-to-end encyprtion
+- supports many platforms
+
+*Bear* (only Apple OS)
