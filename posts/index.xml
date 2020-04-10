@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Notes to self</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 20:12:35 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 21:39:42 +0100</lastBuildDate>
     
 	<atom:link href="https://signalpillar.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Emacs Tox Integration</title>
+      <link>https://signalpillar.github.io/posts/blog/emacs-tox-integration/</link>
+      <pubDate>Fri, 10 Apr 2020 21:39:42 +0100</pubDate>
+      
+      <guid>https://signalpillar.github.io/posts/blog/emacs-tox-integration/</guid>
+      <description>I am a heavy user of tox. Every new project has one and it is not only because I can keep my dependencies and tools configuration in one place but also because I have a nice integration with Emacs.  I press f4 and select the test environment to use. (global-set-key [f4] &amp;#39;sp/tox/activate-current-project-tox-env)   Powerful combo of tox, projectile, and helm. (defun sp/tox/find-tox-dirs-in-project (project-root-dir) (defun -find-toxenv-bin-dirs (root) (projectile-files-via-ext-command root (format &amp;#34;find %s -type d -name &amp;#39;bin&amp;#39; -path &amp;#39;*/.</description>
+    </item>
     
     <item>
       <title>Hugo</title>
