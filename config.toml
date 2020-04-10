@@ -4,5 +4,6 @@ title = "Notes to self"
 theme = "noteworthy"
 publishDir = "public"
 
+[params]
 twitter = "signalpillar"
 github = "signalpillar"
