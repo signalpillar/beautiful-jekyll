@@ -4,6 +4,9 @@ title = "Notes to self"
 theme = "noteworthy"
 publishDir = "public"
 
+enableRobotsTXT = true
+
 [params]
-twitter = "signalpillar"
-github = "signalpillar"
+  AuthorName = "Volodymyr Vitvitskyi"
+  GitHubUser = "signalpillar"
+  Subtitle = "experiment"
