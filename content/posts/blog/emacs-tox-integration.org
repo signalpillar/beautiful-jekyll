@@ -1,0 +1,46 @@
+---
+title: "Emacs Tox Integration"
+date: 2020-04-10T21:39:42+01:00
+draft: false
+---
+
+I am a heavy user of *tox*. Every new project has one and it is not only because I
+can keep my dependencies and tools configuration in one place but also because I
+have a nice integration with Emacs.
+
+I press *f4* and select the test environment to use.
+
+#+BEGIN_SRC elisp
+  (global-set-key [f4] 'sp/tox/activate-current-project-tox-env)
+#+END_SRC
+
+Powerful combo of tox, projectile, and helm.
+
+#+BEGIN_SRC elisp
+(defun sp/tox/find-tox-dirs-in-project (project-root-dir)
+
+  (defun -find-toxenv-bin-dirs (root)
+    (projectile-files-via-ext-command
+     root
+     (format "find %s -type d -name 'bin' -path '*/.tox/*/bin' -print0" root)))
+
+  (-map (lambda (file) (sp/path/parent-dir (sp/path/parent-dir file)))
+        (-find-toxenv-bin-dirs project-root-dir)))
+
+(defun sp/tox/activate-current-project-tox-env ()
+  (interactive)
+  (let* (
+         (venv-dirs (sp/tox/find-tox-dirs-in-project (projectile-project-root)))
+         (venv-dirs-length (length venv-dirs)))
+    (progn
+      (venv-set-location
+       (if (> venv-dirs-length 1)
+           (helm-comp-read "Choose tox directory to workon" venv-dirs)
+         (if (= venv-dirs-length 0)
+             (error "The project doesn't have created tox virtual environments.")
+           (car venv-dirs))))
+      (venv-workon)
+      (add-to-list 'python-shell-extra-pythonpaths (projectile-project-root))
+      (add-to-list 'python-shell-extra-pythonpaths (format "%s/src" (projectile-project-root)))
+      )))
+#+END_SRC
