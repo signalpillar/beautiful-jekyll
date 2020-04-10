@@ -17,7 +17,9 @@
       <pubDate>Fri, 10 Apr 2020 20:12:35 +0100</pubDate>
       
       <guid>https://signalpillar.github.io/posts/my-first-post/</guid>
-      <description> Theme Edited in Emacs + emacs-easy-hugo  </description>
+      <description>I decided to move from a single org file to hugo and have &amp;ldquo;normal&amp;rdquo; design of the blog.
+The trick with adding github repo as a submodule (master branch) keeps the repo clean. Hugo website has a great documentation.
+ Theme Edited in Emacs + emacs-easy-hugo  </description>
     </item>
     
   </channel>
