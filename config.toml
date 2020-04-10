@@ -2,7 +2,7 @@ baseURL = "https://signalpillar.github.io/"
 languageCode = "en-us"
 title = "Notes to self"
 theme = "noteworthy"
-publishDir = ".."
+publishDir = "../public"
 
 twitter = "signalpillar"
 github = "signalpillar"
